@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <style>
-        /* Apply brightness filter to brighten the logo */
-        .filter-brightness {
-            filter: brightness(1.9); /* Adjust this value as needed */
-        }
+      /* Apply brightness filter to brighten the GitHub logo */
+      .filter-brightness {
+        filter: brightness(1.9); /* Adjust this value as needed */
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-[#A9B1BA]">
-
+  <body class="bg-[#A9B1BA]">
     <div class="flex">
-        <!-- Side Navbar with responsiveness -->
-        <div class="w-80 h-screen bg-[#011936] text-[#F4FFFD] p-6 flex flex-col text-center md:w-64 lg:w-80">
-            <!-- Portfolio Image at the top (rounded square) -->
-            <div class="flex justify-center mb-8">
-                <!-- Updated image to be a rounded square -->
-                <img src="https://i.ibb.co/64TFChx/image1.jpg" alt="Image of me" class="rounded-lg w-60 h-60 object-cover mx-auto">
-            </div>
-
-            <!-- Links Section (with padding to push the content down) -->
-            <div class="space-y-6 flex-grow mt-8">
-
-
-                <div class="space-y-6 text-3xl md:text-2xl">
-                    <a href="about.html" class="block hover:text-indigo-400">About</a>
-                    <a href="projects.html" class="block hover:text-indigo-400">Projects</a>
-                    <a href="cv.html" class="block hover:text-indigo-400">CV</a>
-                    <a href="contact.html" class="block hover:text-indigo-400">Contact Me</a>
-                </div>
-            </div>
-
-            <!-- Social Media Links at the bottom -->
-            <div class="flex justify-center space-x-6 mt-8">
-                <a href="https://www.linkedin.com/in/martina-best-08bb2419a/?originalSubdomain=uk" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/LinkedIn_Logo_2023.png" alt="LinkedIn" class="w-10 h-10 sm:w-8 sm:h-8">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" alt="Instagram" class="w-10 h-10 sm:w-8 sm:h-8">
-                </a>
-                <a href="https://github.com" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="w-10 h-10 sm:w-8 sm:h-8 filter-brightness">
-                </a>
-            </div>
+      <!-- Side Navbar with responsiveness -->
+      <div
+        class="w-80 h-screen bg-[#011936] text-[#F4FFFD] p-6 flex flex-col text-center md:w-64 lg:w-80"
+      >
+        <!-- Portfolio Image at the top (rounded square) -->
+        <div class="flex justify-center mb-8">
+          <!-- Updated image to be a rounded square -->
+          <img
+            src="https://i.ibb.co/64TFChx/image1.jpg"
+            alt="Image of me"
+            class="rounded-lg w-60 h-60 object-cover mx-auto"
+          />
         </div>
 
-        <!-- Main Content Area -->
-        <div class="flex-1 p-8">
-            <!-- Main Content Here -->
+        <!-- Links Section (with padding to push the content down) -->
+        <div class="space-y-6 flex-grow mt-8">
+          <div class="space-y-6 text-3xl md:text-2xl">
+            <a href="about.html" class="block hover:text-[#5DA5FD]">About</a>
+            <a href="projects.html" class="block hover:text-[#5DA5FD]"
+              >Projects</a
+            >
+            <a href="cv.html" class="block hover:text-[#5DA5FD]">CV</a>
+            <a href="contact.html" class="block hover:text-[#5DA5FD]"
+              >Contact Me</a
+            >
+          </div>
         </div>
+
+        <!-- Social Media Links at the bottom -->
+        <div class="social-icons flex justify-center space-x-6 mt-8">
+          <a
+            href="https://www.linkedin.com/in/martina-best-08bb2419a/?originalSubdomain=uk"
+            target="_blank"
+          >
+            <!-- Font Awesome LinkedIn Icon -->
+            <i class="fab fa-linkedin-in w-10 h-10 text-blue-600"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
+              alt="Instagram"
+              class="w-10 h-10 sm:w-8 sm:h-8"
+            />
+          </a>
+          <a href="https://github.com" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+              alt="GitHub"
+              class="w-10 h-10 sm:w-8 sm:h-8 filter-brightness"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 p-8">
+        <!-- Main Content Here -->
+
+        <!-- Logo Section -->
+        <div class="text-center mt-16">
+          <!-- Row with the HTML, JS, CSS, and Tailwind logos -->
+          <div class="flex justify-center gap-16 mb-12">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="HTML Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 transform transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 transform transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+              alt="CSS Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 transform transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind Logo"
+              class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 transform transition-all duration-300 hover:scale-110 hover:shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
