@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-[#EBEBEB]">
+    <div class="flex">
+      <!-- Side Navbar with responsiveness -->
+      <div
+        class="w-80 h-screen bg-[#325580] text-[#EBEBEB] p-6 flex flex-col text-center md:w-64 lg:w-80 fixed top-0 left-0"
+      >
+        <!-- Portfolio Image -->
+        <div class="flex justify-center mb-4">
+          <img
+            src="https://i.ibb.co/64TFChx/image1.jpg"
+            alt="Image of me"
+            class="rounded-lg w-60 h-60 object-cover mx-auto"
+          />
+        </div>
+
+        <!-- Caption below image -->
+        <div class="text-center mb-4">
+          <h1 class="text-2xl font-semibold text-[#EBEBEB]">Martina Best</h1>
+        </div>
+
+        <!-- Navbar links (adjusted margin) -->
+        <div class="space-y-6 flex-grow mt-16"> <!-- Increased mt-16 -->
+          <div class="space-y-6 text-3xl md:text-2xl">
+            <a href="index.html" class="block hover:text-[#7796BB]">Home</a>
+            <a href="about.html" class="block hover:text-[#7796BB]">About</a>
+            <a href="projects.html" class="block hover:text-[#7796BB]">Projects</a>
+            <a href="cv.html" class="block hover:text-[#7796BB]">CV</a>
+            <a href="contact.html" class="block hover:text-[#7796BB]">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Social Media Links at the bottom -->
+        <div class="social-icons flex justify-center space-x-8 mt-8">
+          <a
+            href="https://www.linkedin.com/in/martina-best-08bb2419a/?originalSubdomain=uk"
+            target="_blank"
+            class="text-[#EBEBEB]"
+          >
+            <!-- LinkedIn Icon -->
+            <i class="fab fa-linkedin-in text-5xl"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
+              alt="Instagram"
+              class="w-12 h-12"
+            />
+          </a>
+          <a href="https://github.com" target="_blank" class="text-[#EBEBEB]">
+            <!-- GitHub Icon -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+              alt="GitHub"
+              class="w-12 h-12"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="flex-1 p-8 ml-80 mt-16"> <!-- Adjusted margin-left to avoid overlap -->
+        <!-- Title for CV Section -->
+        <div class="text-center mb-8">
+          <div
+            class="inline-block border-4 border-[#474747] px-8 py-4 rounded-lg bg-[#f4f4f4]"
+          >
+            <h1 class="text-4xl font-bold text-[#474747]">CV</h1>
+          </div>
+        </div>
+
+        <!-- Embed PDF -->
+        <div class="w-full h-screen overflow-auto">
+            <embed
+            src="https://drive.google.com/file/d/17HxWuJhM4tbbje-qTi_Cw2Q73SqB7pms/preview"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+            class="border-4 border-[#474747] rounded-lg"
+          />
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
