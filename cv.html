@@ -34,7 +34,8 @@
         </div>
 
         <!-- Navbar links (adjusted margin) -->
-        <div class="space-y-6 flex-grow mt-16"> <!-- Increased mt-16 -->
+        <div class="space-y-6 flex-grow mt-16">
+          <!-- Increased mt-16 -->
           <div class="space-y-6 text-3xl md:text-2xl">
             <a href="index.html" class="block hover:text-[#7796BB]">Home</a>
             <a href="about.html" class="block hover:text-[#7796BB]">About</a>
@@ -73,26 +74,36 @@
       </div>
 
       <!-- Main Content Area -->
-      <div class="flex-1 p-8 ml-80 mt-16"> <!-- Adjusted margin-left to avoid overlap -->
+      <div class="flex-1 p-8 ml-80 mt-16">
         <!-- Title for CV Section -->
         <div class="text-center mb-8">
           <div
-            class="inline-block border-4 border-[#474747] px-8 py-4 rounded-lg bg-[#f4f4f4]"
+            class="inline-block border-4 border-[#474747] rounded-lg bg-[#325580] px-8 py-4"
           >
-            <h1 class="text-4xl font-bold text-[#474747]">CV</h1>
+            <h1 class="text-4xl font-bold text-[#EBEBEB]">CV</h1>
           </div>
+        </div>
+
+        <!-- "Download CV" Button -->
+        <div class="text-center mb-8">
+          <a
+            href="https://drive.google.com/file/d/17HxWuJhM4tbbje-qTi_Cw2Q73SqB7pms/view?usp=drive_link"
+            target="_blank"
+            class="inline-block bg-[#A1B6C2] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#7796BB] transition"
+          >
+            Download CV
+          </a>
         </div>
 
         <!-- Embed PDF -->
         <div class="w-full h-screen overflow-auto">
-            <embed
+          <embed
             src="https://drive.google.com/file/d/17HxWuJhM4tbbje-qTi_Cw2Q73SqB7pms/preview"
             type="application/pdf"
             width="100%"
             height="100%"
             class="border-4 border-[#474747] rounded-lg"
           />
-          
         </div>
       </div>
     </div>

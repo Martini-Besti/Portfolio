@@ -15,9 +15,9 @@
 
   <body class="bg-[#EBEBEB]">
     <div class="flex">
-      <!-- Side Navbar with responsiveness -->
+      <!-- Side Navbar with responsiveness and sticky positioning -->
       <div
-        class="w-80 h-screen bg-[#325580] text-[#EBEBEB] p-6 flex flex-col text-center md:w-64 lg:w-80"
+        class="w-80 h-screen bg-[#325580] text-[#EBEBEB] p-6 flex flex-col text-center md:w-64 lg:w-80 sticky top-0"
       >
         <!-- Portfolio Image -->
         <div class="flex justify-center mb-4">
@@ -33,30 +33,24 @@
           <h1 class="text-2xl font-semibold text-[#EBEBEB]">Martina Best</h1>
         </div>
 
-        <!-- Navbar links (adjusted margin) -->
-        <div class="space-y-6 flex-grow mt-16"> <!-- Increased mt-16 -->
+        <!-- Navbar links -->
+        <div class="space-y-6 flex-grow mt-16">
           <div class="space-y-6 text-3xl md:text-2xl">
-            <!-- Add hover color change -->
             <a href="index.html" class="block hover:text-[#7796BB]">Home</a>
             <a href="about.html" class="block hover:text-[#7796BB]">About</a>
-            <a href="projects.html" class="block hover:text-[#7796BB]"
-              >Projects</a
-            >
+            <a href="projects.html" class="block hover:text-[#7796BB]">Projects</a>
             <a href="cv.html" class="block hover:text-[#7796BB]">CV</a>
-            <a href="contact.html" class="block hover:text-[#7796BB]"
-              >Contact Me</a
-            >
+            <a href="contact.html" class="block hover:text-[#7796BB]">Contact Me</a>
           </div>
         </div>
 
-        <!-- Social Media Links at the bottom -->
+        <!-- Social Media Links -->
         <div class="social-icons flex justify-center space-x-8 mt-8">
           <a
             href="https://www.linkedin.com/in/martina-best-08bb2419a/?originalSubdomain=uk"
             target="_blank"
             class="text-[#EBEBEB]"
           >
-            <!-- LinkedIn Icon -->
             <i class="fab fa-linkedin-in text-5xl"></i>
           </a>
           <a href="https://www.instagram.com" target="_blank">
@@ -67,7 +61,6 @@
             />
           </a>
           <a href="https://github.com" target="_blank" class="text-[#EBEBEB]">
-            <!-- GitHub Icon -->
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
               alt="GitHub"
@@ -79,40 +72,157 @@
 
       <!-- Main Content Area -->
       <div class="flex-1 p-8">
-        <!-- Logo Section -->
-        <div class="text-center mt-16">
-          <div class="flex justify-center gap-20 mb-12">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt="HTML Logo"
-              class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-              alt="JavaScript Logo"
-              class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-              alt="CSS Logo"
-              class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-              alt="Tailwind Logo"
-              class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18"
-            />
+        <!-- Projects Section -->
+        <div class="text-center mt-8">
+          <div
+            class="inline-block border-4 border-[#474747] rounded-lg bg-[#325580] px-8 py-4 mb-12"
+          >
+            <h1 class="text-4xl font-bold text-[#EBEBEB]">Projects</h1>
           </div>
         </div>
 
-        <!-- New container for the h1 -->
-        <div class="text-center mt-8">
-          <!-- Container with border, padding, and rounded corners -->
-          <div
-            class="inline-block border-4 border-[#474747] px-8 py-4 rounded-lg bg-[#f4f4f4]"
-          >
-            <h1 class="text-4xl font-bold text-[#474747]">Projects</h1>
-            <p></p>
+        <!-- GAME Project Container -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row relative"
+        >
+          <div class="w-1/2 w-full">
+            <h2 class="text-2xl font-semibold text-[#325580] mb-4">Game</h2>
+            <p class="text-gray-600 mb-4">
+              This is a fun and engaging game I created. It includes various
+              levels and challenges that make it enjoyable for all ages.
+            </p>
+            <a
+              href="https://github.com/Martini-Besti/Game.git"
+              class="text-[#325580] hover:underline"
+              target="_blank"
+              >Source code</a
+            >
+
+            <!-- Logos under source code, positioned at bottom left with responsive size -->
+            <div class="absolute bottom-0 left-0 flex gap-4 mb-4 ml-4">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="HTML Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                alt="JavaScript Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                alt="CSS Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 w-full">
+            <a href="https://martini-besti.github.io/Game/">
+              <img
+                src="https://i.ibb.co/R2Gk4SK/Screenshot-2024-12-18-at-11-12-04.png"
+                alt="Game Image"
+                class="w-full h-auto mb-4 rounded-lg"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Quiz Project Container -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row relative"
+        >
+          <div class="md:w-1/2 w-full">
+            <h2 class="text-2xl font-semibold text-[#325580] mb-4">Quiz</h2>
+            <p class="text-gray-600 mb-4">
+              A fun quiz application to test the knowledge of your physics. I
+              built this using HTML and CSS
+            </p>
+            <a
+              href="https://github.com/Martini-Besti/Quiz.git"
+              class="text-[#325580] hover:underline"
+              target="_blank"
+              >Source code</a
+            >
+
+            <!-- Logos under source code, positioned at bottom left with responsive size -->
+            <div class="absolute bottom-0 left-0 flex gap-4 mb-4 ml-4">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="HTML Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                alt="JavaScript Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                alt="CSS Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 w-full">
+            <a href="https://martini-besti.github.io/Quiz/">
+              <img
+                src="https://i.ibb.co/F01rdGF/Screenshot-2024-12-18-at-15-16-49.png"
+                alt="Quiz Image"
+                class="w-full h-auto mb-4 rounded-lg"
+                target="_blank"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Webpage Project Container -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-md mb-8 flex flex-col md:flex-row relative"
+        >
+          <div class="md:w-1/2 w-full">
+            <h2 class="text-2xl font-semibold text-[#325580] mb-4">Webpage</h2>
+            <p class="text-gray-600 mb-4">
+              This was my first project. It opened my eyes to the limitless
+              powers of CSS with animation. There were ideas I sought from
+              elsewhere and made them my own creation.
+            </p>
+            <a
+              href="https://github.com/Martini-Besti/Martinis-page.git"
+              class="text-[#325580] hover:underline"
+              target="_blank"
+              >Source code</a
+            >
+
+            <!-- Logos under source code, positioned at bottom left with responsive size -->
+            <div class="absolute bottom-0 left-0 flex gap-4 mb-4 ml-4">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                alt="HTML Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                alt="CSS Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                alt="Tailwind Logo"
+                class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+              />
+            </div>
+          </div>
+          <div class="md:w-1/2 w-full">
+            <a href="https://martini-besti.github.io/Martinis-page/">
+              <img
+                src="https://i.ibb.co/sJHfmBp/Screenshot-2024-12-18-at-09-40-52.png"
+                alt="Webpage Image"
+                class="w-full h-auto mb-4 rounded-lg"
+                target="_blank"
+              />
+            </a>
           </div>
         </div>
       </div>
