@@ -24,10 +24,11 @@
   </head>
 
   <body class="bg-[#EBEBEB]">
-    <div class="flex">
+    <div class="flex h-screen">
+      <!-- Flex container for navbar + content -->
       <!-- Side Navbar with responsiveness -->
       <nav
-        class="w-80 h-screen bg-[#325580] text-[#EBEBEB] p-6 flex flex-col text-center md:w-64 lg:w-80"
+        class="w-80 h-full bg-[#325580] text-[#EBEBEB] p-6 flex flex-col text-center md:w-64 lg:w-80"
       >
         <!-- Portfolio Image -->
         <div class="flex justify-center mb-4">
@@ -81,7 +82,8 @@
       </nav>
 
       <!-- Main Content Area -->
-      <main class="flex-1 p-8">
+      <main class="flex-1 p-8 flex flex-col">
+        <!-- Flex container with flex-grow -->
         <!-- Skills Section -->
         <section class="text-center mt-16">
           <div class="flex justify-center gap-8 mb-12">
@@ -117,12 +119,11 @@
           </div>
         </section>
 
+        <!-- Contact Form Section (Corrected to prevent overflow) -->
         <section
-          class="flex justify-center items-start min-h-screen bg-gray-100"
+          class="flex justify-center items-start bg-gray-100 mt-8 flex-grow"
         >
-          <div
-            class="inline-block px-8 py-5 rounded-lg bg-[#f4f4f4] max-w-lg mt-10"
-          >
+          <div class="inline-block px-8 py-5 rounded-lg bg-[#f4f4f4] max-w-lg">
             <p class="text-lg">
               <strong>Email:</strong> martina.besty@gmail.com <br />
               <strong>Phone:</strong> +44 78536 59071 <br />
