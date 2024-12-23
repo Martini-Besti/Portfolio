@@ -33,9 +33,15 @@
           <h1 class="text-2xl font-semibold text-[#EBEBEB]">Martina Best</h1>
         </div>
 
-        <!-- Navbar links (adjusted margin) -->
-        <div class="space-y-6 flex-grow mt-16">
-          <!-- Increased mt-16 -->
+        <!-- Hamburger Menu Button (Visible on small screens) -->
+        <div class="md:hidden flex justify-end mb-4">
+          <button id="hamburger" class="text-3xl text-[#EBEBEB]">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navbar links (Hidden on mobile, visible on medium and large screens) -->
+        <div id="navbar" class="space-y-6 flex-grow mt-16 hidden md:block">
           <div class="space-y-6 text-3xl md:text-2xl">
             <a href="index.html" class="block hover:text-[#7796BB]">Home</a>
             <a href="about.html" class="block hover:text-[#7796BB]">About</a>
@@ -56,11 +62,9 @@
             target="_blank"
             class="text-[#EBEBEB]"
           >
-            <!-- LinkedIn Icon -->
             <i class="fab fa-linkedin-in text-5xl"></i>
           </a>
           <a href="https://github.com" target="_blank" class="text-[#EBEBEB]">
-            <!-- GitHub Icon -->
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
               alt="GitHub"
@@ -104,5 +108,15 @@
         </div>
       </div>
     </div>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          const navbar = document.getElementById("navbar");
+          navbar.classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>

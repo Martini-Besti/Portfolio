@@ -33,8 +33,15 @@
           <h1 class="text-2xl font-semibold text-[#EBEBEB]">Martina Best</h1>
         </div>
 
-        <!-- Navbar links (adjusted margin) -->
-        <div class="space-y-6 flex-grow mt-16">
+        <!-- Hamburger Menu Button (Visible on small screens) -->
+        <div class="md:hidden flex justify-end mb-4">
+          <button id="hamburger" class="text-3xl text-[#EBEBEB]">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Navbar links (Hidden on mobile, visible on medium and large screens) -->
+        <div id="navbar" class="space-y-6 flex-grow mt-16 hidden md:block">
           <div class="space-y-6 text-3xl md:text-2xl">
             <a href="index.html" class="block hover:text-[#7796BB]">Home</a>
             <a href="about.html" class="block hover:text-[#7796BB]">About</a>
@@ -164,5 +171,17 @@
         </div>
       </div>
     </div>
+
+    <!-- JavaScript to toggle the menu visibility on small screens -->
+    <script>
+      // Get the hamburger button and navbar
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.getElementById("navbar");
+
+      // Add event listener to toggle navbar visibility
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("hidden"); // Toggle the hidden class
+      });
+    </script>
   </body>
 </html>
